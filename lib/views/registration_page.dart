@@ -15,7 +15,32 @@ class RegistrationPage extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            // Implement your form fields here using FormBuilder or TextField
+            TextField(
+              decoration: const InputDecoration(labelText: 'First Name'),
+              onChanged: (value) => controller.updateUserField('firstName', value),
+            ),
+            const SizedBox(height: 10),
+            TextField(
+              decoration: const InputDecoration(labelText: 'Last Name'),
+              onChanged: (value) => controller.updateUserField('lastName', value),
+            ),
+            const SizedBox(height: 10),
+            TextField(
+              decoration: const InputDecoration(labelText: 'Email'),
+              onChanged: (value) => controller.updateUserField('email', value),
+            ),
+            const SizedBox(height: 10),
+            TextField(
+              decoration: const InputDecoration(labelText: 'Phone Number'),
+              onChanged: (value) => controller.updateUserField('phoneNumber', value),
+            ),
+            const SizedBox(height: 10),
+            TextField(
+              decoration: const InputDecoration(labelText: 'Password'),
+              obscureText: true,
+              onChanged: (value) => controller.updateUserField('password', value),
+            ),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: controller.registerUser,
               child: const Text('Register'),
