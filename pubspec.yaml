@@ -40,6 +40,12 @@ dependencies:
   firebase_auth: ^4.8.0
   cloud_firestore: ^4.9.0
   flutter_form_builder: ^9.1.0
+  image_picker: ^1.0.4
+  geolocator: ^10.0.0
+  location: ^5.0.3
+  form_field_validator: ^1.1.0
+  mapbox_maps_flutter: ^0.5.1
+
 
 dev_dependencies:
   flutter_test:
@@ -64,8 +70,10 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/default_profile_image.png
+    - assets/AUTOMATIK.png
+    - assets/LOGO.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
